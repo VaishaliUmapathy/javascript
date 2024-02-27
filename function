@@ -1,0 +1,45 @@
+
+function sumOfDigits(num1){
+    let sum=0;
+    while(num1>0){
+        num1=num1/10;
+        sum=sum+num1;
+        let rem=num1%10;
+    }
+   
+    return sum;
+}
+console.log(sumOfDigits(123));
+//arbitaryfunction
+function sum(){
+    let sum=0;
+    for(let i=0;i<arguments.length;i++){
+        sum+=arguments[i];
+    }
+    return sum;
+}
+console.log(sum(12,12));
+console.log(sum(12,12,10,101,10));
+//(...spread operaator)
+function total(...values){
+    let sum=0;
+    for(let i=0;i<values.length;i++){
+        sum+=values[i];
+    }
+    return sum;
+}
+
+console.log(sum(12,12));
+console.log(sum(12,12,10,101,10));
+
+//functions as expressions
+const variable=sum(45,45);
+console.log(variable);
+const str="the value of two parametrers will be" + total(50,50);
+console.log(str);
+
+const num=function minus(a,b){
+    subraction=a-b;
+    return subraction;
+}
+console.log(num(5,2));
