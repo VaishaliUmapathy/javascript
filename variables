@@ -1,0 +1,59 @@
+//var keyword
+var chocolate ="5star";
+function choco(){
+    var biscuit ="good day"
+    console.log(chocolate , biscuit);
+}
+console.log(chocolate );
+
+//let keyword
+
+for(let i=0;i<=5;i++){
+    console.log(i);
+}
+
+let j=1;
+function increment(){
+    j++;
+    console.log(j);
+
+}
+console.log(j);
+increment();
+
+//const keyword
+
+const pi = 22/7;
+console.log(pi);
+function value(){
+    console.log(pi);
+}
+value();
+
+for(const i=0 ;i<=5;i++){
+    console.log("the i value",i);
+}
+
+//datatypes 
+/*
+Number,Nan
+String
+Null
+Bigint
+Boolean
+Symbols
+Undefined
+Object
+Date
+Array
+*/
+//Number
+
+let num1=6
+
+console.log(num1);
+//let B=NaN;
+//console.log(B);
+//let C=9999999n;
+//console.log(C);
+
