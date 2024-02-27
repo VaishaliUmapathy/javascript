@@ -1,0 +1,36 @@
+//math function
+//Math.round() returns the nearest integer
+let val1=23.9
+console.log("the round of a number",Math.round(val1));
+
+//Math.floor() returns the value of x rounded down to its nearest integer
+console.log("the floor will be:",Math.floor(val1));
+
+//math.ceil() returns the value of x rounded up to its nearest integer
+console.log("the ceil of the number will be:",Math.ceil(val1));
+
+//math.trunc() returns the integer part of x
+console.log("the integer part of val1 will be:",Math.trunc(val1));
+
+//Math.sign() returns if x is negative, null or positive
+console.log("the sign of the number will be:",Math.sign(val1));
+let negnum=-90;
+console.log("the sign of the number will be:",Math.sign(negnum));
+let zero=0;
+console.log("the sign of the number will be:",Math.sign(zero));
+
+//math.pow(number,power)
+let power=2;
+console.log("the power of the will be:",Math.pow(power,2));
+
+//math.abs() returns the absolute (positive) value of x
+console.log("the absolute value will be:",Math.abs(val1));
+
+//Math.sqrt() returns the squareroot
+let square=16;
+console.log("the square root of the number will be:",Math.sqrt(square)) ;
+
+//Math.random() return the randomnumber from 0 to 9
+console.log("the randomn number will be:",Math.random()) ;
+
+console.log("the randomn number using floor will be:",Math.floor(Math.random()*10)) ;
