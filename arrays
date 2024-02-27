@@ -1,0 +1,46 @@
+let array1=[1,2,3,4,5];
+console.log("the array wille be:",array1);
+
+//using the constructor
+let array2 = new Array(10,20,30,40,50);
+console.log("the array wille  USING NEW CONSTRUCTOR:",array2);
+
+//typeOf() in js it returns as ojects for arrays
+console.log("the type of the array will be:",typeof(array2));
+
+//array to string
+console.log("the array into the string using toString():",array1.toString());
+
+//using for loop 
+for(let i=0; i<array1.length; i++){
+    console.log(i);
+}
+
+//length returns the length of the array
+let len=array2.length;
+console.log("the length of the string will be:",len);
+
+//accessing the array
+console.log(array1[0]);
+
+//pop()
+const movies=["leo","vikram","lal salaam"]
+console.log("the original array will be:",movies);
+const popp=movies.pop();
+console.log("the popped elmenet in an array:",popp);
+console.log(movies.length);
+
+//push()
+const pushh=movies.push("joe");
+console.log("the pushed elmenet in an array:",pushh);
+console.log(movies.length);
+
+//shift()
+const shiftt=movies.shift();
+console.log('the shift elemnt will be:',shiftt);
+console.log(movies);
+
+//unshift()
+const unshiftt = movies.unshift("nira");
+console.log("the array:",unshiftt);
+console.log(movies.length);
