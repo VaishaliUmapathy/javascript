@@ -1,0 +1,113 @@
+let Str1="I'm a Computer Science Engineer ";
+let Str2="From Madurai";
+
+//concatenation
+let concatenation=Str1+Str2;
+console.log("After Concatenation:",concatenation);
+
+let usingConcat=Str1.concat(Str2);
+console.log("Using Concatenation Method:",usingConcat);
+
+//charAt returns a character for a specified value
+let charat=Str1.charAt(6);
+console.log("the charAt method:",charat);
+
+//charCodeAt returns the Unicode of the specified position
+let charcodeat =Str1.charCodeAt(6);
+console.log("the charCodeAt will be:",charcodeat);
+
+//slicing the string
+//1) slice(start,end)extract a aprt of string, return the extracted part in anew string and it also allows the - index
+let Slice=Str1.slice(6,22);
+console.log("the slicing string will be:",Slice);
+let negSliceIndex=Str1.slice(-9,-1);
+console.log("the negative slice string will be:",negSliceIndex);
+let SliceStart=Str1.substring(6);//start position only
+console.log("the slicestarting will be:",SliceStart);
+
+//2) substring(start,ebd)returns extracted part of the string 
+
+let subStringSlice=Str1.substring(6,22);
+console.log("the substringslice will be:",subStringSlice);
+let negSubStringSlice=Str1.substring(-8,-1);//negative
+console.log("the negative slice string will be:",negSubStringSlice);
+let subStringStart=Str1.substring(6);//start position only
+console.log("the substringslice will be:",subStringStart);
+
+//3) substr(start,length) it includes the length asthe second parameter
+let str3=Str1.substr(0,10);
+console.log("the sub string bu using the substr():",str3);
+let str4=Str1.substr(-9,10);
+console.log("the sub string for negative by using the substr():",str4);
+let str5=Str1.substr(10);
+console.log("the sub string for single parameter by using the substr():",str5);
+
+//trim() removes the whitespace and blankspaces
+let trim1="   hello world       ";
+let aftertrim=trim1.trim();
+console.log("aftertrimming the next will be:",aftertrim);
+//trimStart()
+let trimstart=trim1.trimStart();
+console.log("after starttrim :",trimstart);
+//trimEnd()
+let trimend=trim1.trimStart();
+console.log("after starttrim :",trimend);
+
+//padding
+//padStart(count,charater)it pads the string with another string it reaches a given length
+let string1="abc";
+let padStarting=string1.padStart(6,"z");
+console.log("after the padding at the string at the starting:",padStarting);
+//padEnd(count,character)it pads the string with another string it reaches a given length
+let string2="xyz";
+let padEnding=string1.padEnd(4,"a");
+console.log("after the padding at the string at the ending:",padEnding);
+
+//toLowerCase() to change the str into lowercase
+let stringlower="ANdalvaisHALI"
+let lower=stringlower.toLowerCase();
+console.log("after changing into Lowercase:",lower);
+
+//toUpperCase() to change the str into lowercase
+let stringupper="ANdalvaisHALI"
+let upper=stringlower.toUpperCase();
+console.log("after changing into Uppercase:",upper);
+
+//repeat() returns a string with number of copies
+let string3="helllo";
+let repeating = string3.repeat(3);
+console.log("the repeatedstring will be:",repeating);
+
+//replace()  does not  change the original string ,case sensitive
+let string4="hello world";
+let rep=string4.replace("world","vaishali");
+console.log("replacing teh string:",rep)
+//to replacethe case sensitive /i
+let casei=string4.replace(/woRLd/i,"andal");
+console.log("after replacing using i flag:",casei);
+//TO replaceall the particular string using /g using regular expression
+let strings="aab sabg sah sab asgahj avbs abc abc hghj";
+let g=strings.replace(/sab/g,"xyz");
+console.log("after replacing using the g regular expression:",g);
+
+//string can be converted into  array  using spilt() method
+let array = string4.split();
+console.log("an array will be:",array);
+
+//includes()returns true if a str contains the specified value otheerwise false 2nd arg is optional
+strings="hello im am vaishali learning javascript";
+let include=strings.includes("vaishali");
+console.log("the output will be like:",include);
+
+let include2arg=strings.includes("vaishali",12);//second argument
+console.log("the output will be like:",include2arg);
+
+//startswith()start with specified value  returns true or otherwise returns false
+let srtWith=strings.startsWith("hello");
+console.log("output will be:",srtWith);
+
+//endsWith()ends  with specified value returns true or otherwise returns false
+let endwith=strings.endsWith("javascript");
+console.log(endwith);
+
+
